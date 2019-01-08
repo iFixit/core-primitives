@@ -1,6 +1,14 @@
 {
   "name": "@core-ds/primitives",
-  "version": "0.2.0",
+  "version": "0.3.3",
   "description": "",
-  "main": "index.js"
+  "main": "index.js",
+  "files": ["*.less"],
+  "scripts": {
+    "build": "node bin/build.js",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "lodash.kebabcase": "^4.1.1"
+  }
 }
