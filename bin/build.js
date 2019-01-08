@@ -5,8 +5,7 @@ const primitives = require('..')
 
 fs.writeFileSync(
   path.resolve(__dirname, '../variables.less'),
-  `/* GENERATED FILE. DO NOT EDIT. */
-${toLess(primitives)}`,
+  `/* GENERATED FILE. DO NOT EDIT. */\n${toLess(primitives)}`,
 )
 
 function toLess(obj) {
