@@ -2,7 +2,7 @@
   "name": "@core-ds/primitives",
   "version": "0.4.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.json",
   "files": [
     "*.less"
   ],
