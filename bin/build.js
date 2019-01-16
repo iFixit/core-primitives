@@ -4,7 +4,7 @@ const kebabCase = require('lodash.kebabcase')
 const primitives = require('..')
 
 fs.writeFileSync(
-  path.resolve(__dirname, '../core-primitives.less'),
+  path.resolve(process.cwd(), 'core-primitives.less'),
   `/* GENERATED FILE. DO NOT EDIT. */\n${toLess(primitives)}`,
 )
 
