@@ -12,7 +12,7 @@ npm install @core-ds/primitives
 
 ### Less
 
-Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php#L169) as Less variables in every Less file in the [ifixit/ifixit](https://github.com/ifixit/ifixit) repo. Here's an example of how you can use Core Primitives in a Less file:
+Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) as [Less variables](https://unpkg.com/@core-ds/primitives/core-primitives.less) in every Less file in the [ifixit/ifixit](https://github.com/ifixit/ifixit) repo. Here's an example of how you can use Core Primitives in a Less file:
 
 ```less
 .example {
