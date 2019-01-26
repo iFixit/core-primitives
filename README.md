@@ -18,6 +18,7 @@ Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/m
 .example {
   color: @color-white;
   background-color: @color-blue;
+  padding: @space-4;
 
   &:hover {
     background-color: @color-blue-dark-1;
