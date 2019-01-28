@@ -78,5 +78,11 @@
     "1.875rem",
     "2.25rem",
     "3rem"
-  ]
+  ],
+  "lineHeight": {
+    "none": 1,
+    "tight": 1.25,
+    "normal": 1.5,
+    "loose": 2
+  }
 }
