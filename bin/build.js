@@ -6,7 +6,13 @@ const primitives = require('..')
 
 fs.writeFileSync(
   path.resolve(process.cwd(), 'core-primitives.less'),
-  `// Core Primitives v${version}\n// GENERATED FILE. DO NOT EDIT.\n${toLess(primitives)}\n`,
+  [
+    `// Core Primitives v${version}`,
+    '// GENERATED FILE. DO NOT EDIT.',
+    toLess(primitives),
+  ]
+    .map(string => string + '\n')
+    .join(''),
 )
 
 function toLess(obj) {
