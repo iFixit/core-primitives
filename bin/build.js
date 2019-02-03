@@ -1,11 +1,12 @@
 const fs = require('fs')
 const path = require('path')
 const kebabCase = require('lodash.kebabcase')
+const { version } = require('../package.json')
 const primitives = require('..')
 
 fs.writeFileSync(
   path.resolve(process.cwd(), 'core-primitives.less'),
-  `// GENERATED FILE. DO NOT EDIT.\n${toLess(primitives)}\n`,
+  `// Core Primitives v${version}\n// GENERATED FILE. DO NOT EDIT.\n${toLess(primitives)}\n`,
 )
 
 function toLess(obj) {
