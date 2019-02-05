@@ -79,6 +79,10 @@
     "2.25rem",
     "3rem"
   ],
+  "fontWeight": {
+    "normal": 400,
+    "bold": 700
+  },
   "lineHeight": {
     "none": 1,
     "tight": 1.25,
