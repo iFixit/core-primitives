@@ -1,3 +1,5 @@
+![img](https://user-images.githubusercontent.com/705973/52283404-65869a80-2930-11e9-90b8-9a9f1f8f8aa9.png)
+
 # Core Primitives
 
 [![npm version](https://img.shields.io/npm/v/@core-ds/primitives.svg?style=flat-square)](https://www.npmjs.com/package/@core-ds/primitives)
