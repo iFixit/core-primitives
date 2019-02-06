@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.json",
   "files": [
-    "*.less"
+    "index.d.ts",
+    "core-primitives.less"
   ],
   "scripts": {
     "build": "node bin/build.js",
