@@ -1,12 +1,13 @@
 interface Primitives {
   color: Color
-  space: string[]
-  fontSize: string[]
+  space: Space
+  fontSize: FontSize
   fontWeight: FontWeight
   lineHeight: LineHeight
   breakpoint: Breakpoint
-  shadow: string[]
+  shadow: Shadow
 }
+
 interface Color {
   blue: string
   green: string
@@ -55,21 +56,38 @@ interface Color {
   gray7: string
   gray8: string
 }
+
+type Space = string[]
+
+type FontSize = string[]
+
 interface FontWeight {
   normal: number
   bold: number
 }
+
 interface LineHeight {
   none: number
   tight: number
   normal: number
   loose: number
 }
+
 interface Breakpoint {
   sm: string
   md: string
   lg: string
   xl: string
 }
+
+type Shadow = string[]
+
+export declare const color: Color
+export declare const space: Space
+export declare const fontSize: FontSize
+export declare const fontWeight: FontWeight
+export declare const lineHeight: LineHeight
+export declare const breakpoint: Breakpoint
+export declare const shadow: Shadow
 declare const primitives: Primitives
 export default primitives

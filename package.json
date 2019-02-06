@@ -3,7 +3,9 @@
   "version": "0.10.1-0",
   "description": "",
   "main": "index.json",
+  "types": "index.d.ts",
   "files": [
+    "index.json",
     "index.d.ts",
     "core-primitives.less"
   ],
