@@ -101,5 +101,11 @@
     "0 1px 2px rgba(17, 22, 26, 0.1), 0 4px 8px rgba(17, 22, 26, 0.1)",
     "0 2px 4px rgba(17, 22, 26, 0.1), 0 8px 16px rgba(17, 22, 26, 0.2)",
     "0 4px 8px rgba(17, 22, 26, 0.1), 0 16px 32px rgba(17, 22, 26, 0.2)"
-  ]
+  ],
+  "borderRadius": {
+    "sm": "2px",
+    "md": "4px",
+    "lg": "8px",
+    "pill": "999px"
+  }
 }

@@ -6,6 +6,7 @@ interface Primitives {
   lineHeight: LineHeight
   breakpoint: Breakpoint
   shadow: Shadow
+  borderRadius: BorderRadius
 }
 
 interface Color {
@@ -82,6 +83,13 @@ interface Breakpoint {
 
 type Shadow = string[]
 
+interface BorderRadius {
+  sm: string
+  md: string
+  lg: string
+  pill: string
+}
+
 export declare const color: Color
 export declare const space: Space
 export declare const fontSize: FontSize
@@ -89,5 +97,6 @@ export declare const fontWeight: FontWeight
 export declare const lineHeight: LineHeight
 export declare const breakpoint: Breakpoint
 export declare const shadow: Shadow
+export declare const borderRadius: BorderRadius
 declare const primitives: Primitives
 export default primitives
