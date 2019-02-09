@@ -1,4 +1,5 @@
-<img width="440" alt="primitives" src="https://user-images.githubusercontent.com/705973/52524149-d5b25a80-2c67-11e9-84d3-9f6b6addcb37.png">
+<img width="100%" alt="primitives2" src="https://user-images.githubusercontent.com/705973/52524183-56715680-2c68-11e9-8156-a1e81baa6201.png">
+
 
 
 [![npm version](https://img.shields.io/npm/v/@core-ds/primitives.svg?style=flat-square)](https://www.npmjs.com/package/@core-ds/primitives)
