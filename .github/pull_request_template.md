@@ -1,6 +1,10 @@
-## Summary of changes
+Summary of changes
+---
 
-## Merge checklist
+
+
+Merge checklist
+---
 
 - [ ] Bump the package version by running `npm version [patch | minor | major]` from the command line (if applicable).
 
