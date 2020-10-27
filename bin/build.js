@@ -30,8 +30,7 @@ fs.writeFileSync(
     toCssVars(primitives),
     `}`,
   ]
-    .map((string) => string + "\n")
-    .join("")
+    .join("\n")
 );
 
 function toCssVars(obj) {
