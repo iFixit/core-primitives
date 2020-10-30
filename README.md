@@ -1,7 +1,5 @@
 <img width="100%" alt="primitives2" src="https://user-images.githubusercontent.com/705973/52524183-56715680-2c68-11e9-8156-a1e81baa6201.png">
 
-
-
 [![npm version](https://img.shields.io/npm/v/@core-ds/primitives.svg?style=flat-square)](https://www.npmjs.com/package/@core-ds/primitives)
 
 - [Reference](https://unpkg.com/@core-ds/primitives)
@@ -20,8 +18,8 @@ npm install @core-ds/primitives
 After installing the [npm package](https://www.npmjs.com/package/@core-ds/primitives), you can import Core Primitives into any JavaScript/TypeScript file. Here's an example of how you can use Core Primitives with styled-components:
 
 ```js
-import styled from 'styled-components'
-import { color, space } from '@core-ds/primitives'
+import styled from "styled-components";
+import { color, space } from "@core-ds/primitives";
 
 const Example = styled.div`
   color: ${color.white};
@@ -31,7 +29,7 @@ const Example = styled.div`
   &:hover {
     background-color: ${color.blueDark1};
   }
-`
+`;
 ```
 
 ### Less
@@ -51,6 +49,42 @@ Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/m
 ```
 
 See the complete list of Less variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.less).
+
+### CSS Variables
+
+Core Primitives are globally available as [CSS variables](https://unpkg.com/@core-ds/primitives/core-primitives.css) in any (P)HTML file they are linked from. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
+
+```html
+<!-- link to core-primitives.css in (P)HTML -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@core-ds/primitives/core-primitives.css?v1.1"
+/>
+```
+
+```css
+/* excerpt from core-primitives.css */
+:root {
+  --color-blue: #1975F1;
+  ...
+  --font-family-inter: 'Inter Var', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  ...
+}
+```
+
+```css
+/* use from your stylesheet */
+element {
+  background-color: var(--color-blue);
+  ...
+  font-family: var(--font-family-inter);
+  ...
+}
+```
+
+See the complete list of CSS variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.css).
+
+[MDN Custom Properties (AKA: CSS Variables) article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 ## Contributing
 
