@@ -1,6 +1,8 @@
 interface Primitives {
   color: Color;
   space: Space;
+  fontFamily: FontFamily;
+  fontSettings: FontSettings;
   fontSize: FontSize;
   fontWeight: FontWeight;
   lineHeight: LineHeight;
