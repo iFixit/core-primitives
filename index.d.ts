@@ -104,8 +104,8 @@ interface BorderRadius {
 
 export declare const color: Color;
 export declare const space: Space;
-export declare const FontFamily: FontFamily;
-export declare const FontSettings: FontSettings;
+export declare const fontFamily: FontFamily;
+export declare const fontSettings: FontSettings;
 export declare const fontSize: FontSize;
 export declare const fontWeight: FontWeight;
 export declare const lineHeight: LineHeight;
