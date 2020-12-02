@@ -78,6 +78,7 @@ type FontSize = string[];
 
 interface FontWeight {
   normal: number;
+  semiBold: number;
   bold: number;
 }
 
@@ -101,6 +102,7 @@ interface BorderRadius {
   sm: string;
   md: string;
   lg: string;
+  xl: string;
   pill: string;
 }
 

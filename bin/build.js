@@ -11,8 +11,8 @@ fs.writeFileSync(
 // GENERATED FILE. DO NOT EDIT.`,
     toLess(primitives),
   ]
-    .map((string) => string + "\n")
-    .join("")
+    .map((string) => string)
+    .join("\n")
 );
 
 function toLess(obj) {
@@ -29,8 +29,7 @@ fs.writeFileSync(
     `:root {`,
     toCssVars(primitives),
     `}`,
-  ]
-    .join("\n")
+  ].join("\n")
 );
 
 function toCssVars(obj) {

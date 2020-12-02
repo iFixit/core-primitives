@@ -87,10 +87,14 @@
     "24px",
     "30px",
     "36px",
-    "48px"
+    "48px",
+    "56px",
+    "64px",
+    "72px"
   ],
   "fontWeight": {
     "normal": 400,
+    "semi-bold": 600,
     "bold": 700
   },
   "lineHeight": {
@@ -117,6 +121,7 @@
     "sm": "2px",
     "md": "4px",
     "lg": "8px",
+    "xl": "16px",
     "pill": "999px"
   }
 }
