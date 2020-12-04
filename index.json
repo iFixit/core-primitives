@@ -87,15 +87,19 @@
     "24px",
     "30px",
     "36px",
-    "48px"
+    "48px",
+    "56px",
+    "64px",
+    "72px"
   ],
   "fontWeight": {
     "normal": 400,
+    "semi-bold": 600,
     "bold": 700
   },
   "lineHeight": {
     "none": 1,
-    "base": 1.14286,
+    "base": 1.142857143,
     "tight": 1.25,
     "normal": 1.42857,
     "loose": 2
@@ -117,6 +121,7 @@
     "sm": "2px",
     "md": "4px",
     "lg": "8px",
+    "xl": "16px",
     "pill": "999px"
   }
 }
