@@ -5,13 +5,13 @@
 - [Reference](https://unpkg.com/@core-ds/primitives)
 - [Figma](https://www.figma.com/file/3HaqcNx1TsdkyGAJqHGzZW/Core-Primitives)
 
-## Installation
+# Installation
 
 ```shell
 npm install @core-ds/primitives
 ```
 
-## Usage
+# Usage
 
 ### JavaScript
 
@@ -58,7 +58,7 @@ Core Primitives are globally available as [CSS variables](https://unpkg.com/@cor
 <!-- link to core-primitives.css in (P)HTML -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@core-ds/primitives/core-primitives.css?v1.1"
+  href="https://unpkg.com/@core-ds/primitives/core-primitives.css?v1.x.x"
 />
 ```
 
@@ -86,7 +86,7 @@ See the complete list of CSS variables [here](https://unpkg.com/@core-ds/primiti
 
 [MDN Custom Properties (AKA: CSS Variables) article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
-## Contributing
+# Contributing
 
 ### Local development setup
 
@@ -103,7 +103,7 @@ npm install
 
 ### Adding or updating primitives
 
-#### 1. Create a new branch
+### 1. Create a new branch
 
 Create a new branch for your changes:
 
@@ -111,15 +111,15 @@ Create a new branch for your changes:
 git checkout -b <branch>
 ```
 
-#### 2. Commit and push changes
+### 2. Commit and push changes
 
 Apply your changes to `index.json`. Don't forget to keep `index.d.ts` in sync with `index.json`.
 
-#### 3. Open a pull request
+### 3. Open a pull request
 
 Use GitHub to [create a pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) for your branch.
 
-#### 4. Bump the package version
+### 4. Bump the package version
 
 After your pull request has been approved, bump the package version by running:
 
@@ -131,11 +131,25 @@ npm version [patch | minor | major]
 
 > **Note:** In the context of Core Primitives, significant changes to the library or workflow, or removing primitives would be considered a major update, adding or updating primitives would be considered a minor update, and fixing primitives would be considered a patch. Non-code changes (e.g. documentation) do not require a version bump.
 
-#### 5. Merge into master
+### 5. Build Package
 
-After your pull request has been approved and the package version has been bumped, go ahead and [merge the pull request](https://help.github.com/en/articles/merging-a-pull-request) into master. You don't have to worry about publishing to npm because we have a GitHub action set up to automatically publish the package when a commit is pushed to master.
+```shell
+npm run build
+```
 
-#### 6. Create a release
+### 6. Publish to NPM
+
+```shell
+npm publish
+```
+
+<!--
+Broken, see issue here: https://github.com/iFixit/core-primitives/issues/15
+### 5. Merge into master
+
+After your pull request has been approved and the package version has been bumped, go ahead and [merge the pull request](https://help.github.com/en/articles/merging-a-pull-request) into master. You don't have to worry about publishing to npm because we have a GitHub action set up to automatically publish the package when a commit is pushed to master. -->
+
+### 7. Create a release
 
 After your pull request have been merged, [create a new release](https://help.github.com/en/articles/creating-releases) to document your changes. Use the tag you generated in step 4 to create the release.
 
