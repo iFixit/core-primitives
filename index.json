@@ -70,10 +70,11 @@
   ],
   "fontFamily": {
     "inter": "'Inter Var', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
-    "mono": "'Roboto Mono', 'Monaco', 'Lucida Console', 'Courier New', 'Courier', monospace",
-    "monoSystem": "'Monaco', 'Lucida Console', 'Courier New', 'Courier', monospace",
+    "lato": "Lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+    "mono": "'Roboto Mono', Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
+    "monoSystem": "Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
     "sansSystem": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
-    "serifSystem": "'Georgia', serif"
+    "serifSystem": "Georgia, serif"
   },
   "fontSettings": {
     "inter": "'calt', 'cpsp', 'cv01', 'cv03', 'cv04', 'cv05', 'cv10', 'kern', 'liga'"

@@ -64,6 +64,7 @@ type Space = string[];
 
 interface FontFamily {
   inter: string;
+  lato: string;
   mono: string;
   monoSystem: string;
   sansSystem: string;
