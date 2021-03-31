@@ -69,11 +69,11 @@
     "128px"
   ],
   "fontFamily": {
-    "inter": "'Inter Var', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
-    "lato": "Lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+    "inter": "'Inter Var', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
+    "lato": "Lato, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "mono": "'Roboto Mono', Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
     "monoSystem": "Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
-    "sansSystem": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif",
+    "sansSystem": "-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "serifSystem": "Georgia, serif"
   },
   "fontSettings": {
