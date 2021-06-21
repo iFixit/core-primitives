@@ -11,100 +11,62 @@ interface Primitives {
   borderRadius: BorderRadius;
 }
 
+interface ColorValue {
+  "50": string;
+  "100": string;
+  "200": string;
+  "300": string;
+  "400": string;
+  "500": string;
+  "600": string;
+  "700": string;
+  "800": string;
+  "900": string;
+}
+
 interface Color {
   black: string;
   white: string;
-  rose: {
-    value: string;
-    hex: string;
-  };
-  pink: {
-    value: string;
-    hex: string;
-  };
-  fuchsia: {
-    value: string;
-    hex: string;
-  };
-  purple: {
-    value: string;
-    hex: string;
-  };
-  violet: {
-    value: string;
-    hex: string;
-  };
-  indigo: {
-    value: string;
-    hex: string;
-  };
-  blue: {
-    value: string;
-    hex: string;
-  };
-  lightBlue: {
-    value: string;
-    hex: string;
-  };
-  cyan: {
-    value: string;
-    hex: string;
-  };
-  teal: {
-    value: string;
-    hex: string;
-  };
-  emerald: {
-    value: string;
-    hex: string;
-  };
-  green: {
-    value: string;
-    hex: string;
-  };
-  lime: {
-    value: string;
-    hex: string;
-  };
-  yellow: {
-    value: string;
-    hex: string;
-  };
-  amber: {
-    value: string;
-    hex: string;
-  };
-  orange: {
-    value: string;
-    hex: string;
-  };
-  red: {
-    value: string;
-    hex: string;
-  };
-  warmGray: {
-    value: string;
-    hex: string;
-  };
-  trueGray: {
-    value: string;
-    hex: string;
-  };
-  gray: {
-    value: string;
-    hex: string;
-  };
-  coolGray: {
-    value: string;
-    hex: string;
-  };
-  blueGray: {
-    value: string;
-    hex: string;
-  };
+  rose: ColorValue;
+  pink: ColorValue;
+  fuchsia: ColorValue;
+  purple: ColorValue;
+  violet: ColorValue;
+  indigo: ColorValue;
+  blue: ColorValue;
+  lightBlue: ColorValue;
+  cyan: ColorValue;
+  teal: ColorValue;
+  emerald: ColorValue;
+  green: ColorValue;
+  lime: ColorValue;
+  yellow: ColorValue;
+  amber: ColorValue;
+  orange: ColorValue;
+  red: ColorValue;
+  warmGray: ColorValue;
+  trueGray: ColorValue;
+  gray: ColorValue;
+  coolGray: ColorValue;
+  blueGray: ColorValue;
 }
 
-type Space = string[];
+type Space = {
+  "0": "0",
+  "1": "4px",
+  "2": "8px",
+  "3": "12px",
+  "4": "16px",
+  "5": "24px",
+  "6": "32px",
+  "7": "40px",
+  "8": "48px",
+  "9": "64px",
+  "10": "80px",
+  "11": "96px",
+  "12": "112px",
+  "13": "128px"
+}
 
 interface FontFamily {
   inter: string;
@@ -119,7 +81,20 @@ interface FontSettings {
   inter: string;
 }
 
-type FontSize = string[];
+type FontSize = {
+  sm: string;
+  md: string;
+  lg: string;
+  xl: string;
+  "2xl": string;
+  "3xl": string;
+  "4xl": string;
+  "5xl": string;
+  "6xl": string;
+  "7xl": string;
+  "8xl": string;
+  "9xl": string;
+}
 
 interface FontWeight {
   normal: number;
@@ -141,7 +116,13 @@ interface Breakpoint {
   xl: string;
 }
 
-type Shadow = string[];
+type Shadow = {
+  "1": "0 0 1px rgba(17, 22, 26, 0.2)",
+  "2": "0 1px 2px rgba(17, 22, 26, 0.1), 0 2px 4px rgba(17, 22, 26, 0.1)",
+  "3": "0 1px 2px rgba(17, 22, 26, 0.1), 0 4px 8px rgba(17, 22, 26, 0.1)",
+  "4": "0 2px 4px rgba(17, 22, 26, 0.1), 0 8px 16px rgba(17, 22, 26, 0.2)",
+  "5": "0 4px 8px rgba(17, 22, 26, 0.1), 0 16px 32px rgba(17, 22, 26, 0.2)"
+};
 
 interface BorderRadius {
   sm: string;
