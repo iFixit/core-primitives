@@ -34,7 +34,7 @@ fs.writeFileSync(
 
 function toCssVars(obj) {
   return Object.entries(flatten(obj))
-    .map(([key, value]) => `--${key}: ${value};`)
+    .map(([key, value]) => `  --${key}: ${value};`)
     .join("\n");
 }
 

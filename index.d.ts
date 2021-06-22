@@ -51,22 +51,7 @@ interface Color {
   blueGray: ColorValue;
 }
 
-type Space = {
-  "0": "0",
-  "1": "4px",
-  "2": "8px",
-  "3": "12px",
-  "4": "16px",
-  "5": "24px",
-  "6": "32px",
-  "7": "40px",
-  "8": "48px",
-  "9": "64px",
-  "10": "80px",
-  "11": "96px",
-  "12": "112px",
-  "13": "128px"
-}
+type Space = string[];
 
 interface FontFamily {
   inter: string;
@@ -116,13 +101,7 @@ interface Breakpoint {
   xl: string;
 }
 
-type Shadow = {
-  "1": "0 0 1px rgba(17, 22, 26, 0.2)",
-  "2": "0 1px 2px rgba(17, 22, 26, 0.1), 0 2px 4px rgba(17, 22, 26, 0.1)",
-  "3": "0 1px 2px rgba(17, 22, 26, 0.1), 0 4px 8px rgba(17, 22, 26, 0.1)",
-  "4": "0 2px 4px rgba(17, 22, 26, 0.1), 0 8px 16px rgba(17, 22, 26, 0.2)",
-  "5": "0 4px 8px rgba(17, 22, 26, 0.1), 0 16px 32px rgba(17, 22, 26, 0.2)"
-};
+type Shadow = string[];
 
 interface BorderRadius {
   sm: string;
