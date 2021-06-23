@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const kebabCase = require("lodash.kebabcase");
+const kebabCase = require("kebab-case");
 const { version } = require("../package.json");
 const primitives = require("..");
 
@@ -34,7 +34,7 @@ fs.writeFileSync(
 
 function toCssVars(obj) {
   return Object.entries(flatten(obj))
-    .map(([key, value]) => `--${key}: ${value};`)
+    .map(([key, value]) => `  --${key}: ${value};`)
     .join("\n");
 }
 

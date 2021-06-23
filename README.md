@@ -11,6 +11,12 @@
 npm install @core-ds/primitives
 ```
 
+or in a HTML project:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@core-ds/primitives/core-primitives.css" />
+```
+
 # Usage
 
 ### JavaScript
@@ -22,12 +28,12 @@ import styled from "styled-components";
 import { color, space } from "@core-ds/primitives";
 
 const Example = styled.div`
-  color: ${color.white};
-  background-color: ${color.blue};
+  color: ${color.white[400]};
+  background-color: ${color.blue[400]};
   padding: ${space[4]};
 
   &:hover {
-    background-color: ${color.blueDark1};
+    background-color: ${color.blue[800]};
   }
 `;
 ```
@@ -37,35 +43,30 @@ const Example = styled.div`
 Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) as [Less variables](https://unpkg.com/@core-ds/primitives/core-primitives.less) in every Less file in the [ifixit/ifixit](https://github.com/ifixit/ifixit) repo. Here's an example of how you can use Core Primitives in a Less file:
 
 ```less
-.example {
-  color: @color-white;
-  background-color: @color-blue;
+.selector {
+  color: @color-white-400;
+  background-color: @color-blue-400;
   padding: @space-4;
 
   &:hover {
-    background-color: @color-blue-dark-1;
+    background-color: @color-blue-800;
   }
 }
 ```
 
 See the complete list of Less variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.less).
 
-### CSS Variables
+### CSS custom properties
 
-Core Primitives are globally available as [CSS variables](https://unpkg.com/@core-ds/primitives/core-primitives.css) in any (P)HTML file they are linked from. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
-
-```html
-<!-- link to core-primitives.css in (P)HTML -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/@core-ds/primitives/core-primitives.css?v1.x.x"
-/>
-```
+Core Primitives are available as [CSS custom properties](https://unpkg.com/@core-ds/primitives/core-primitives.css) in any (P)HTML file they are linked from. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
 
 ```css
 /* excerpt from core-primitives.css */
 :root {
-  --color-blue: #1975F1;
+  --color-black: #000;
+  --color-white: #fff;
+  ...
+  --color-blue-400: #1975F1;--color-blue-400
   ...
   --font-family-inter: 'Inter Var', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   ...
@@ -73,18 +74,18 @@ Core Primitives are globally available as [CSS variables](https://unpkg.com/@cor
 ```
 
 ```css
-/* use from your stylesheet */
-element {
-  background-color: var(--color-blue);
+/* your stylesheet */
+.selector {
+  background-color: var(--color-blue-400);
   ...
   font-family: var(--font-family-inter);
   ...
 }
 ```
 
-See the complete list of CSS variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.css).
+See the complete list of CSS custom properties [here](https://unpkg.com/@core-ds/primitives/core-primitives.css).
 
-[MDN Custom Properties (AKA: CSS Variables) article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+[MDN CSS Custom Properties (AKA: CSS variables) article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 # Contributing
 
@@ -113,7 +114,7 @@ git checkout -b <branch>
 
 ### 2. Commit and push changes
 
-Apply your changes to `index.json`. Don't forget to keep `index.d.ts` in sync with `index.json`.
+Apply your changes to `index.json`, and keep `index.d.ts` in sync.
 
 ### 3. Open a pull request
 
@@ -142,12 +143,6 @@ npm run build
 ```shell
 npm publish
 ```
-
-<!--
-Broken, see issue here: https://github.com/iFixit/core-primitives/issues/15
-### 5. Merge into master
-
-After your pull request has been approved and the package version has been bumped, go ahead and [merge the pull request](https://help.github.com/en/articles/merging-a-pull-request) into master. You don't have to worry about publishing to npm because we have a GitHub action set up to automatically publish the package when a commit is pushed to master. -->
 
 ### 7. Create a release
 
