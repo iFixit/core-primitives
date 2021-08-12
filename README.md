@@ -19,7 +19,7 @@ or in a HTML project:
 
 # Usage
 
-### JavaScript
+## JavaScript
 
 After installing the [npm package](https://www.npmjs.com/package/@core-ds/primitives), you can import Core Primitives into any JavaScript/TypeScript file. Here's an example of how you can use Core Primitives with styled-components:
 
@@ -38,9 +38,9 @@ const Example = styled.div`
 `;
 ```
 
-### Less
+## LESS
 
-Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) as [Less variables](https://unpkg.com/@core-ds/primitives/core-primitives.less) in every Less file in the [ifixit/ifixit](https://github.com/ifixit/ifixit) repo. Here's an example of how you can use Core Primitives in a Less file:
+Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) as [LESS variables](https://unpkg.com/@core-ds/primitives/core-primitives.less) in every LESS file in the [ifixit/ifixit](https://github.com/ifixit/ifixit) repo. Here's an example of how you can use Core Primitives in a LESS file:
 
 ```less
 .selector {
@@ -54,11 +54,11 @@ Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/m
 }
 ```
 
-See the complete list of Less variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.less).
+See the complete list of LESS variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.less).
 
-### CSS custom properties
+## CSS custom properties
 
-Core Primitives are available as [CSS custom properties](https://unpkg.com/@core-ds/primitives/core-primitives.css) in any (P)HTML file they are linked from. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
+Core Primitives are available as [CSS custom properties](https://unpkg.com/@core-ds/primitives/core-primitives.css) in any (P)HTML file they are linked from. An example of how you can use Core Primitives in an (P)HTML or CSS file:
 
 ```css
 /* excerpt from core-primitives.css */
@@ -66,9 +66,9 @@ Core Primitives are available as [CSS custom properties](https://unpkg.com/@core
   --color-black: #000;
   --color-white: #fff;
   ...
-  --color-blue-400: #1975F1;--color-blue-400
+  --color-blue-400: #1975F1;
   ...
-  --font-family-inter: 'Inter Var', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-family-inter: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   ...
 }
 ```
@@ -89,7 +89,7 @@ See the complete list of CSS custom properties [here](https://unpkg.com/@core-ds
 
 # Contributing
 
-### Local development setup
+## Local development setup
 
 Follow these steps to get the project setup on your local machine:
 
@@ -102,9 +102,9 @@ cd core-primitives
 npm install
 ```
 
-### Adding or updating primitives
+## Adding or updating primitives
 
-### 1. Create a new branch
+## 1. Create a new branch
 
 Create a new branch for your changes:
 
@@ -112,15 +112,15 @@ Create a new branch for your changes:
 git checkout -b <branch>
 ```
 
-### 2. Commit and push changes
+## 2. Commit and push changes
 
 Apply your changes to `index.json`, and keep `index.d.ts` in sync.
 
-### 3. Open a pull request
+## 3. Open a pull request
 
 Use GitHub to [create a pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) for your branch.
 
-### 4. Bump the package version
+## 4. Bump the package version
 
 After your pull request has been approved, bump the package version by running:
 
@@ -132,19 +132,19 @@ npm version [patch | minor | major]
 
 > **Note:** In the context of Core Primitives, significant changes to the library or workflow, or removing primitives would be considered a major update, adding or updating primitives would be considered a minor update, and fixing primitives would be considered a patch. Non-code changes (e.g. documentation) do not require a version bump.
 
-### 5. Build Package
+## 5. Build Package
 
 ```shell
 npm run build
 ```
 
-### 6. Publish to NPM
+## 6. Publish to NPM
 
 ```shell
 npm publish
 ```
 
-### 7. Create a release
+## 7. Create a release
 
 After your pull request have been merged, [create a new release](https://help.github.com/en/articles/creating-releases) to document your changes. Use the tag you generated in step 4 to create the release.
 

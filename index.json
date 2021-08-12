@@ -284,7 +284,8 @@
     "128px"
   ],
   "fontFamily": {
-    "inter": "'Inter Var', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
+    "arialBlack": "'Arial Black', 'Arial Bold', Gadget, sans-serif",
+    "inter": "Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "lato": "Lato, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "mono": "'Roboto Mono', Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
     "monoSystem": "Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
