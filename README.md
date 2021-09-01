@@ -13,9 +13,9 @@ npm install @core-ds/primitives
 
 # Usage
 
-### JavaScript
+## JavaScript
 
-After installing the [npm package](https://www.npmjs.com/package/@core-ds/primitives), you can import Core Primitives into any JavaScript/TypeScript file. Here's an example of how you can use Core Primitives with styled-components:
+After installing the [npm package](https://www.npmjs.com/package/@core-ds/primitives), you can import `@core-ds/primitives` into any JavaScript/TypeScript file. Here's an example of how you can use Core Primitives with styled-components:
 
 ```js
 import styled from "styled-components";
@@ -32,9 +32,9 @@ const Example = styled.div`
 `;
 ```
 
-### Less
+## LESS
 
-Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) as [Less variables](https://unpkg.com/@core-ds/primitives/core-primitives.less) in every Less file in the [ifixit/ifixit](https://github.com/ifixit/ifixit) repo. Here's an example of how you can use Core Primitives in a Less file:
+Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) as [LESS variables](https://unpkg.com/@core-ds/primitives/core-primitives.less) in every LESS file in the [ifixit/ifixit](https://github.com/ifixit/ifixit) repo. Here's an example of how you can use Core Primitives in a LESS file:
 
 ```less
 .example {
@@ -48,17 +48,17 @@ Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/m
 }
 ```
 
-See the complete list of Less variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.less).
+See the current list of LESS variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.less).
 
-### CSS Variables
+## CSS Custom Properties (Variables)
 
-Core Primitives are globally available as [CSS variables](https://unpkg.com/@core-ds/primitives/core-primitives.css) in any (P)HTML file they are linked from. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
+Core Primitives can be globally available as [CSS Custom Properties](https://unpkg.com/@core-ds/primitives/core-primitives.css) in any (P)HTML file they are linked from. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
 
 ```html
-<!-- link to core-primitives.css in (P)HTML -->
+<!-- first, link to core-primitives.css in (P)HTML -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@core-ds/primitives/core-primitives.css?v1.x.x"
+  href="https://unpkg.com/@core-ds/primitives/core-primitives.css"
 />
 ```
 
@@ -73,7 +73,7 @@ Core Primitives are globally available as [CSS variables](https://unpkg.com/@cor
 ```
 
 ```css
-/* use from your stylesheet */
+/* style the element */
 element {
   background-color: var(--color-blue);
   ...
@@ -82,13 +82,13 @@ element {
 }
 ```
 
-See the complete list of CSS variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.css).
+See the current list of CSS Custom Properties [here](https://unpkg.com/@core-ds/primitives/core-primitives.css).
 
-[MDN Custom Properties (AKA: CSS Variables) article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+For more info, check out the [MDN Custom Properties article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 # Contributing
 
-### Local development setup
+## Local development setup
 
 Follow these steps to get the project setup on your local machine:
 
@@ -101,7 +101,7 @@ cd core-primitives
 npm install
 ```
 
-### Adding or updating primitives
+## Adding or updating primitives
 
 ### 1. Create a new branch
 
@@ -129,7 +129,7 @@ npm version [patch | minor | major]
 
 [`npm version`](https://docs.npmjs.com/cli/version.html) will bump the version and write the new data back to `package.json` and `package-lock.json`. It will also create and push a version commit and tag.
 
-> **Note:** In the context of Core Primitives, significant changes to the library or workflow, or removing primitives would be considered a major update, adding or updating primitives would be considered a minor update, and fixing primitives would be considered a patch. Non-code changes (e.g. documentation) do not require a version bump.
+> **Note:** In the context of `@core-ds/primitives`, significant changes to the library or workflow, or removing primitives would be considered a major update, adding or updating primitives would be considered a minor update, and fixing primitives would be considered a patch. Non-code changes (e.g. documentation) do not require a version bump.
 
 ### 5. Build Package
 
@@ -144,8 +144,8 @@ npm publish
 ```
 
 <!--
-Broken, see issue here: https://github.com/iFixit/core-primitives/issues/15
-### 5. Merge into master
+Currently broken, see issue here: https://github.com/iFixit/core-primitives/issues/15
+## 5. Merge into master
 
 After your pull request has been approved and the package version has been bumped, go ahead and [merge the pull request](https://help.github.com/en/articles/merging-a-pull-request) into master. You don't have to worry about publishing to npm because we have a GitHub action set up to automatically publish the package when a commit is pushed to master. -->
 
