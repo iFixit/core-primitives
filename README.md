@@ -103,7 +103,7 @@ npm install
 
 ## Adding or updating primitives
 
-## 1. Create a new branch
+### 1. Create a new branch
 
 Create a new branch for your changes:
 
@@ -111,15 +111,15 @@ Create a new branch for your changes:
 git checkout -b <branch>
 ```
 
-## 2. Commit and push changes
+### 2. Commit and push changes
 
 Apply your changes to `index.json`. Don't forget to keep `index.d.ts` in sync with `index.json`.
 
-## 3. Open a pull request
+### 3. Open a pull request
 
 Use GitHub to [create a pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) for your branch.
 
-## 4. Bump the package version
+### 4. Bump the package version
 
 After your pull request has been approved, bump the package version by running:
 
@@ -131,13 +131,13 @@ npm version [patch | minor | major]
 
 > **Note:** In the context of `@core-ds/primitives`, significant changes to the library or workflow, or removing primitives would be considered a major update, adding or updating primitives would be considered a minor update, and fixing primitives would be considered a patch. Non-code changes (e.g. documentation) do not require a version bump.
 
-## 5. Build Package
+### 5. Build Package
 
 ```shell
 npm run build
 ```
 
-## 6. Publish to NPM
+### 6. Publish to NPM
 
 ```shell
 npm publish
@@ -149,7 +149,7 @@ Currently broken, see issue here: https://github.com/iFixit/core-primitives/issu
 
 After your pull request has been approved and the package version has been bumped, go ahead and [merge the pull request](https://help.github.com/en/articles/merging-a-pull-request) into master. You don't have to worry about publishing to npm because we have a GitHub action set up to automatically publish the package when a commit is pushed to master. -->
 
-## 7. Create a release
+### 7. Create a release
 
 After your pull request have been merged, [create a new release](https://help.github.com/en/articles/creating-releases) to document your changes. Use the tag you generated in step 4 to create the release.
 
