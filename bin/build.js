@@ -8,7 +8,11 @@ fs.writeFileSync(
   path.resolve(process.cwd(), "core-primitives.less"),
   [
     `// Core Primitives v${version}
-// GENERATED FILE. DO NOT EDIT.`,
+// GENERATED FILE. DO NOT EDIT.
+
+// Import CSS Custom Properties
+@import (inline) "https://unpkg.com/browse/@core-ds/primitives@${version}/core-primitives.css";
+`,
     toLess(primitives),
   ]
     .map((string) => string)
@@ -25,8 +29,9 @@ fs.writeFileSync(
   path.resolve(process.cwd(), "core-primitives.css"),
   [
     `/* Core Primitives v${version} */
-/* GENERATED FILE. DO NOT EDIT. */`,
-    `:root {`,
+/* GENERATED FILE. DO NOT EDIT. */
+
+:root {`,
     toCssVars(primitives),
     `}`,
   ].join("\n")
