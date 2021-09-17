@@ -10,9 +10,6 @@ fs.writeFileSync(
   [
     `// Core Primitives v${version}
 // GENERATED FILE. DO NOT EDIT.
-
-// Import CSS Custom Properties
-@import (inline) "https://unpkg.com/browse/@core-ds/primitives@${version}/core-primitives.css";
 `,
     toLess(primitives),
 ``
