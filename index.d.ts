@@ -24,6 +24,20 @@ interface ColorValue {
   "900": string;
 }
 
+interface ColorValueBlue {
+  "50": string;
+  "100": string;
+  "200": string;
+  "300": string;
+  "400": string;
+  "500": string;
+  "600": string;
+  "700": string;
+  "800": string;
+  "900": string;
+  "ifixit": string;
+}
+
 interface Color {
   black: string;
   white: string;
@@ -33,7 +47,7 @@ interface Color {
   purple: ColorValue;
   violet: ColorValue;
   indigo: ColorValue;
-  blue: ColorValue;
+  blue: ColorValueBlue;
   lightBlue: ColorValue;
   cyan: ColorValue;
   teal: ColorValue;
