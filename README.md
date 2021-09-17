@@ -11,25 +11,19 @@
 npm install @core-ds/primitives
 ```
 
-or in a HTML project:
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/@core-ds/primitives/core-primitives.css" />
-```
-
 # Usage
 
 ## JavaScript
 
-After installing the [npm package](https://www.npmjs.com/package/@core-ds/primitives), you can import Core Primitives into any JavaScript/TypeScript file. Here's an example of how you can use Core Primitives with styled-components:
+After installing the [npm package](https://www.npmjs.com/package/@core-ds/primitives), you can import `@core-ds/primitives` into any JavaScript/TypeScript file. Here's an example of how you can use Core Primitives with styled-components:
 
 ```js
 import styled from "styled-components";
 import { color, space } from "@core-ds/primitives";
 
 const Example = styled.div`
-  color: ${color.white[400]};
-  background-color: ${color.blue[400]};
+  color: ${color.white[500]};
+  background-color: ${color.blue[500]};
   padding: ${space[4]};
 
   &:hover {
@@ -44,8 +38,8 @@ Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/m
 
 ```less
 .selector {
-  color: @color-white-400;
-  background-color: @color-blue-400;
+  color: @color-white-500;
+  background-color: @color-blue-500;
   padding: @space-4;
 
   &:hover {
@@ -56,9 +50,9 @@ Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/m
 
 See the complete list of LESS variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.less).
 
-## CSS custom properties
+## CSS Custom Properties (Variables)
 
-Core Primitives are available as [CSS custom properties](https://unpkg.com/@core-ds/primitives/core-primitives.css) in any (P)HTML file they are linked from. An example of how you can use Core Primitives in an (P)HTML or CSS file:
+Once Core Primitives become available on the `:root` (html) element, [CSS Custom Properties](https://unpkg.com/@core-ds/primitives/core-primitives.css) can be used in any (P)HTML file. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
 
 ```css
 /* excerpt from core-primitives.css */
@@ -66,7 +60,7 @@ Core Primitives are available as [CSS custom properties](https://unpkg.com/@core
   --color-black: #000;
   --color-white: #fff;
   ...
-  --color-blue-400: #1975F1;
+  --color-blue-500: #3b82f6;
   ...
   --font-family-inter: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   ...
@@ -74,18 +68,18 @@ Core Primitives are available as [CSS custom properties](https://unpkg.com/@core
 ```
 
 ```css
-/* your stylesheet */
-.selector {
-  background-color: var(--color-blue-400);
+/* style the element */
+element {
+  background-color: var(--color-blue);
   ...
   font-family: var(--font-family-inter);
   ...
 }
 ```
 
-See the complete list of CSS custom properties [here](https://unpkg.com/@core-ds/primitives/core-primitives.css).
+See the current list of CSS Custom Properties [here](https://unpkg.com/@core-ds/primitives/core-primitives.css).
 
-[MDN CSS Custom Properties (AKA: CSS variables) article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+For more info, check out the [MDN Custom Properties article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 # Contributing
 
@@ -130,7 +124,7 @@ npm version [patch | minor | major]
 
 [`npm version`](https://docs.npmjs.com/cli/version.html) will bump the version and write the new data back to `package.json` and `package-lock.json`. It will also create and push a version commit and tag.
 
-> **Note:** In the context of Core Primitives, significant changes to the library or workflow, or removing primitives would be considered a major update, adding or updating primitives would be considered a minor update, and fixing primitives would be considered a patch. Non-code changes (e.g. documentation) do not require a version bump.
+> **Note:** In the context of `@core-ds/primitives`, significant changes to the library or workflow, or removing primitives would be considered a major update, adding or updating primitives would be considered a minor update, and fixing primitives would be considered a patch. Non-code changes (e.g. documentation) do not require a version bump.
 
 ## 5. Build Package
 
@@ -146,6 +140,6 @@ npm publish
 
 ## 7. Create a release
 
-After your pull request have been merged, [create a new release](https://help.github.com/en/articles/creating-releases) to document your changes. Use the tag you generated in step 4 to create the release.
+After your pull request has been merged, [create a new release](https://help.github.com/en/articles/creating-releases) to document your changes. Use the tag you generated in step 4 to create the release.
 
 Done 🎉
