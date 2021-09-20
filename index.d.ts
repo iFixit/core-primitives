@@ -58,11 +58,7 @@ interface Color {
   amber: ColorValue;
   orange: ColorValue;
   red: ColorValue;
-  warmGray: ColorValue;
-  trueGray: ColorValue;
   gray: ColorValue;
-  coolGray: ColorValue;
-  blueGray: ColorValue;
 }
 
 type Space = string[];
