@@ -68,6 +68,7 @@ interface Color {
 type Space = string[];
 
 interface FontFamily {
+  arialBlack: string;
   inter: string;
   lato: string;
   mono: string;
