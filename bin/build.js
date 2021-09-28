@@ -1,15 +1,18 @@
 const fs = require("fs");
 const path = require("path");
-const kebabCase = require("lodash.kebabcase");
+const kebabCase = require("kebab-case");
 const { version } = require("../package.json");
-const primitives = require("..");
+const primitives = require("../index.json");
 
+// LESS
 fs.writeFileSync(
   path.resolve(process.cwd(), "core-primitives.less"),
   [
     `// Core Primitives v${version}
-// GENERATED FILE. DO NOT EDIT.`,
+// GENERATED FILE. DO NOT EDIT.
+`,
     toLess(primitives),
+``
   ]
     .map((string) => string)
     .join("\n")
@@ -21,20 +24,23 @@ function toLess(obj) {
     .join("\n");
 }
 
+// CSS Custom Properties (Variables)
 fs.writeFileSync(
   path.resolve(process.cwd(), "core-primitives.css"),
   [
     `/* Core Primitives v${version} */
-/* GENERATED FILE. DO NOT EDIT. */`,
-    `:root {`,
-    toCssVars(primitives),
-    `}`,
+/* GENERATED FILE. DO NOT EDIT. */
+
+:root {`,
+    toCss(primitives),
+    `}
+`,
   ].join("\n")
 );
 
-function toCssVars(obj) {
+function toCss(obj) {
   return Object.entries(flatten(obj))
-    .map(([key, value]) => `--${key}: ${value};`)
+    .map(([key, value]) => `  --${key}: ${value};`)
     .join("\n");
 }
 

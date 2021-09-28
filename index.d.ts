@@ -11,102 +11,50 @@ interface Primitives {
   borderRadius: BorderRadius;
 }
 
+interface ColorValue {
+  "50": string;
+  "100": string;
+  "200": string;
+  "300": string;
+  "400": string;
+  "500": string;
+  "600": string;
+  "700": string;
+  "800": string;
+  "900": string;
+}
+
+interface ColorValueBlue extends ColorValue {
+  "ifixit": string;
+}
+
 interface Color {
   black: string;
   white: string;
-  rose: {
-    value: string;
-    hex: string;
-  };
-  pink: {
-    value: string;
-    hex: string;
-  };
-  fuchsia: {
-    value: string;
-    hex: string;
-  };
-  purple: {
-    value: string;
-    hex: string;
-  };
-  violet: {
-    value: string;
-    hex: string;
-  };
-  indigo: {
-    value: string;
-    hex: string;
-  };
-  blue: {
-    value: string;
-    hex: string;
-  };
-  lightBlue: {
-    value: string;
-    hex: string;
-  };
-  cyan: {
-    value: string;
-    hex: string;
-  };
-  teal: {
-    value: string;
-    hex: string;
-  };
-  emerald: {
-    value: string;
-    hex: string;
-  };
-  green: {
-    value: string;
-    hex: string;
-  };
-  lime: {
-    value: string;
-    hex: string;
-  };
-  yellow: {
-    value: string;
-    hex: string;
-  };
-  amber: {
-    value: string;
-    hex: string;
-  };
-  orange: {
-    value: string;
-    hex: string;
-  };
-  red: {
-    value: string;
-    hex: string;
-  };
-  warmGray: {
-    value: string;
-    hex: string;
-  };
-  trueGray: {
-    value: string;
-    hex: string;
-  };
-  gray: {
-    value: string;
-    hex: string;
-  };
-  coolGray: {
-    value: string;
-    hex: string;
-  };
-  blueGray: {
-    value: string;
-    hex: string;
-  };
+  rose: ColorValue;
+  pink: ColorValue;
+  fuchsia: ColorValue;
+  purple: ColorValue;
+  violet: ColorValue;
+  indigo: ColorValue;
+  blue: ColorValueBlue;
+  lightBlue: ColorValue;
+  cyan: ColorValue;
+  teal: ColorValue;
+  emerald: ColorValue;
+  green: ColorValue;
+  lime: ColorValue;
+  yellow: ColorValue;
+  amber: ColorValue;
+  orange: ColorValue;
+  red: ColorValue;
+  gray: ColorValue;
 }
 
 type Space = string[];
 
 interface FontFamily {
+  arialBlack: string;
   inter: string;
   lato: string;
   mono: string;
@@ -119,7 +67,20 @@ interface FontSettings {
   inter: string;
 }
 
-type FontSize = string[];
+type FontSize = {
+  sm: string;
+  md: string;
+  lg: string;
+  xl: string;
+  "2xl": string;
+  "3xl": string;
+  "4xl": string;
+  "5xl": string;
+  "6xl": string;
+  "7xl": string;
+  "8xl": string;
+  "9xl": string;
+}
 
 interface FontWeight {
   normal: number;

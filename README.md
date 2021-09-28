@@ -22,12 +22,12 @@ import styled from "styled-components";
 import { color, space } from "@core-ds/primitives";
 
 const Example = styled.div`
-  color: ${color.white};
-  background-color: ${color.blue};
+  color: ${color.white[500]};
+  background-color: ${color.blue[500]};
   padding: ${space[4]};
 
   &:hover {
-    background-color: ${color.blueDark1};
+    background-color: ${color.blue[800]};
   }
 `;
 ```
@@ -37,37 +37,32 @@ const Example = styled.div`
 Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) as [LESS variables](https://unpkg.com/@core-ds/primitives/core-primitives.less) in every LESS file in the [ifixit/ifixit](https://github.com/ifixit/ifixit) repo. Here's an example of how you can use Core Primitives in a LESS file:
 
 ```less
-.example {
-  color: @color-white;
-  background-color: @color-blue;
+.selector {
+  color: @color-white-500;
+  background-color: @color-blue-500;
   padding: @space-4;
 
   &:hover {
-    background-color: @color-blue-dark-1;
+    background-color: @color-blue-800;
   }
 }
 ```
 
-See the current list of LESS variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.less).
+See the complete list of LESS variables [here](https://unpkg.com/@core-ds/primitives/core-primitives.less).
 
 ## CSS Custom Properties (Variables)
 
-Core Primitives can be globally available as [CSS Custom Properties](https://unpkg.com/@core-ds/primitives/core-primitives.css) in any (P)HTML file they are linked from. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
-
-```html
-<!-- first, link to core-primitives.css in (P)HTML -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/@core-ds/primitives/core-primitives.css"
-/>
-```
+Once Core Primitives become available on the `:root` (html) element, [CSS Custom Properties](https://unpkg.com/@core-ds/primitives/core-primitives.css) can be used in any (P)HTML file. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
 
 ```css
 /* excerpt from core-primitives.css */
 :root {
-  --color-blue: #1975F1;
+  --color-black: #000;
+  --color-white: #fff;
   ...
-  --font-family-inter: 'Inter Var', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --color-blue-500: #3b82f6;
+  ...
+  --font-family-inter: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   ...
 }
 ```
@@ -103,7 +98,7 @@ npm install
 
 ## Adding or updating primitives
 
-### 1. Create a new branch
+## 1. Create a new branch
 
 Create a new branch for your changes:
 
@@ -111,15 +106,15 @@ Create a new branch for your changes:
 git checkout -b <branch>
 ```
 
-### 2. Commit and push changes
+## 2. Commit and push changes
 
-Apply your changes to `index.json`. Don't forget to keep `index.d.ts` in sync with `index.json`.
+Apply your changes to `index.json`, and keep `index.d.ts` in sync.
 
-### 3. Open a pull request
+## 3. Open a pull request
 
 Use GitHub to [create a pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) for your branch.
 
-### 4. Bump the package version
+## 4. Bump the package version
 
 After your pull request has been approved, bump the package version by running:
 
@@ -131,26 +126,20 @@ npm version [patch | minor | major]
 
 > **Note:** In the context of `@core-ds/primitives`, significant changes to the library or workflow, or removing primitives would be considered a major update, adding or updating primitives would be considered a minor update, and fixing primitives would be considered a patch. Non-code changes (e.g. documentation) do not require a version bump.
 
-### 5. Build Package
+## 5. Build Package
 
 ```shell
 npm run build
 ```
 
-### 6. Publish to NPM
+## 6. Publish to NPM
 
 ```shell
 npm publish
 ```
 
-<!--
-Currently broken, see issue here: https://github.com/iFixit/core-primitives/issues/15
-## 5. Merge into master
+## 7. Create a release
 
-After your pull request has been approved and the package version has been bumped, go ahead and [merge the pull request](https://help.github.com/en/articles/merging-a-pull-request) into master. You don't have to worry about publishing to npm because we have a GitHub action set up to automatically publish the package when a commit is pushed to master. -->
-
-### 7. Create a release
-
-After your pull request have been merged, [create a new release](https://help.github.com/en/articles/creating-releases) to document your changes. Use the tag you generated in step 4 to create the release.
+After your pull request has been merged, [create a new release](https://help.github.com/en/articles/creating-releases) to document your changes. Use the tag you generated in step 4 to create the release.
 
 Done 🎉
