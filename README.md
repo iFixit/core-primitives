@@ -3,7 +3,6 @@
 [![npm version](https://img.shields.io/npm/v/@core-ds/primitives.svg?style=flat-square)](https://www.npmjs.com/package/@core-ds/primitives)
 
 - [Reference](https://unpkg.com/@core-ds/primitives)
-- [Figma](https://www.figma.com/file/3HaqcNx1TsdkyGAJqHGzZW/Core-Primitives)
 
 # Installation
 
@@ -15,14 +14,14 @@ npm install @core-ds/primitives
 
 ## JavaScript
 
-After installing the [npm package](https://www.npmjs.com/package/@core-ds/primitives), you can import `@core-ds/primitives` into any JavaScript/TypeScript file. Here's an example of how you can use Core Primitives with styled-components:
+After installing the [@core-ds/primitives](https://www.npmjs.com/package/@core-ds/primitives) npm package, you can import and apply it in any JavaScript/TypeScript file:
 
 ```js
 import styled from "styled-components";
 import { color, space } from "@core-ds/primitives";
 
 const Example = styled.div`
-  color: ${color.white[500]};
+  color: ${color.white};
   background-color: ${color.blue[500]};
   padding: ${space[4]};
 
@@ -34,11 +33,11 @@ const Example = styled.div`
 
 ## LESS
 
-Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) as [LESS variables](https://unpkg.com/@core-ds/primitives/core-primitives.less) in every LESS file in the [ifixit/ifixit](https://github.com/ifixit/ifixit) repo. Here's an example of how you can use Core Primitives in a LESS file:
+LESS Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) in every LESS file in the [iFixit/ifixit](https://github.com/ifixit/ifixit) repo:
 
 ```less
-.selector {
-  color: @color-white-500;
+element {
+  color: @color-white;
   background-color: @color-blue-500;
   padding: @space-4;
 
@@ -52,7 +51,7 @@ See the complete list of LESS variables [here](https://unpkg.com/@core-ds/primit
 
 ## CSS Custom Properties (Variables)
 
-Once Core Primitives become available on the `:root` (html) element, [CSS Custom Properties](https://unpkg.com/@core-ds/primitives/core-primitives.css) can be used in any (P)HTML file. Here's an example of how you can use Core Primitives in an (P)HTML or CSS file:
+CSS Core Primitives are [globally available](https://github.com/iFixit/ifixit/blob/master/Objects/ScriptView.php) on the `:root` (html) element. They can be used in any (P)HTML file:
 
 ```css
 /* excerpt from core-primitives.css */
@@ -61,8 +60,13 @@ Once Core Primitives become available on the `:root` (html) element, [CSS Custom
   --color-white: #fff;
   ...
   --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
   ...
-  --font-family-inter: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
   ...
 }
 ```
@@ -70,16 +74,19 @@ Once Core Primitives become available on the `:root` (html) element, [CSS Custom
 ```css
 /* style the element */
 element {
-  background-color: var(--color-blue);
-  ...
-  font-family: var(--font-family-inter);
-  ...
+  color: var(--color-white);
+  background-color: var(--color-blue-500);
+  padding: var(--space-4);
+
+  &:hover {
+    background-color: var(--color-blue-800);
+  }
 }
 ```
 
 See the current list of CSS Custom Properties [here](https://unpkg.com/@core-ds/primitives/core-primitives.css).
 
-For more info, check out the [MDN Custom Properties article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+For more capabilities, check out the [MDN Custom Properties article](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
 # Contributing
 
