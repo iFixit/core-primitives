@@ -1,11 +1,12 @@
 {
   "name": "@core-ds/primitives",
   "version": "2.3.0",
+  "type": "module",
   "description": "",
-  "main": "index.json",
+  "main": "index.js",
   "types": "index.d.ts",
   "files": [
-    "index.json",
+    "index.js",
     "index.d.ts",
     "core-primitives.less",
     "core-primitives.css"
