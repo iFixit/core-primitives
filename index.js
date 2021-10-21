@@ -1,4 +1,4 @@
-const primitives = {
+export const primitives = {
   color: {
     black: "#000",
     white: "#fff",
@@ -295,5 +295,3 @@ const primitives = {
     pill: "999em",
   },
 }
-
-export default primitives
