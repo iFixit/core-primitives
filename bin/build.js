@@ -1,7 +1,7 @@
 import { writeFileSync } from "fs"
 import { resolve } from "path"
 import kebabCase from "kebab-case"
-import primitives from "../index.js"
+import { primitives } from "../index.js"
 
 const package_version = process.env.npm_package_version
 
@@ -19,7 +19,7 @@ writeFileSync(
     .join("\n")
 )
 
-function toLess(obj: object) {
+function toLess(obj) {
   return Object.entries(flatten(obj))
     .map(([key, value]) => `@${key}: ${value};`)
     .join("\n")
@@ -39,13 +39,13 @@ writeFileSync(
   ].join("\n")
 )
 
-function toCss(obj: object) {
+function toCss(obj) {
   return Object.entries(flatten(obj))
     .map(([key, value]) => `  --${key}: ${value};`)
     .join("\n")
 }
 
-function flatten(obj: object) {
+function flatten(obj) {
   return Object.assign(
     {},
     ...Object.entries(obj).map(([key, value]) => {
