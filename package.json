@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "node bin/build.js",
+    "prerelease": "npm version prerelease --preid=rc",
     "postversion": "git push && git push --tags"
   }
 }
