@@ -1,6 +1,6 @@
 {
   "color": {
-    "black": "#000",
+    "black": "#11161a",
     "white": "#fff",
     "rose": {
       "50": "#fff1f2",
@@ -85,7 +85,7 @@
       "700": "#1d4ed8",
       "800": "#1e40af",
       "900": "#1e3a8a",
-      "ifixit": "#1975F1"
+      "ifixit": "#1975f1"
     },
     "lightBlue": {
       "50": "#f0f9ff",
@@ -205,7 +205,8 @@
       "600": "#dc2626",
       "700": "#b91c1c",
       "800": "#991b1b",
-      "900": "#7f1d1d"
+      "900": "#7f1d1d",
+      "dozuki": "#dd4124"
     },
     "gray": {
       "50": "#f9fafb",
@@ -293,5 +294,11 @@
     "lg": "8px",
     "xl": "16px",
     "pill": "999em"
+  },
+  "transition": {
+    "100": "100ms ease-in-out",
+    "normal": "150ms ease-in-out",
+    "200": "200ms ease-in-out",
+    "250": "250ms ease-in-out"
   }
 }
