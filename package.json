@@ -12,9 +12,7 @@
   ],
   "scripts": {
     "build": "node bin/build.js",
+    "version": "npm run build",
     "postversion": "git push && git push --tags"
-  },
-  "devDependencies": {
-    "kebab-case": "^1.0.1"
   }
 }

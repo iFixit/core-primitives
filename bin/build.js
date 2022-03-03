@@ -1,8 +1,15 @@
+"use strict";
+
 const fs = require("fs");
 const path = require("path");
-const kebabCase = require("kebab-case");
-const { version } = require("../package.json");
 const primitives = require("../index.json");
+const version = process.env.npm_package_version;
+
+function kebabCase(str) {
+  return str.replace(/[A-Z\u00C0-\u00D6\u00D8-\u00DE]/g, function (match) {
+    return "-" + match.toLowerCase();
+  });
+}
 
 // LESS
 fs.writeFileSync(
@@ -12,7 +19,7 @@ fs.writeFileSync(
 // GENERATED FILE. DO NOT EDIT.
 `,
     toLess(primitives),
-``
+    ``,
   ]
     .map((string) => string)
     .join("\n")
@@ -31,6 +38,7 @@ fs.writeFileSync(
     `/* Core Primitives v${version} */
 /* GENERATED FILE. DO NOT EDIT. */
 
+:host,
 :root {`,
     toCss(primitives),
     `}
