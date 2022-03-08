@@ -56,7 +56,7 @@ CSS Core Primitives are [globally available](https://github.com/iFixit/ifixit/bl
 ```css
 /* excerpt from core-primitives.css */
 :root {
-  --color-black: #000;
+  --color-black: #11161a;
   --color-white: #fff;
   ...
   --color-blue-500: #3b82f6;
@@ -96,14 +96,13 @@ Follow these steps to get the project setup on your local machine:
 
 ```shell
 # Clone repo
-git clone https://github.com/iFixit/core-primitives.git
-cd core-primitives
+git clone https://github.com/iFixit/core-primitives.git && cd core-primitives
 
 # Install dependencies
 npm install
 ```
 
-## Adding or updating primitives
+# Adding or Updating Primitives
 
 ## 1. Create a new branch
 
@@ -117,27 +116,25 @@ git checkout -b <branch>
 
 Apply your changes to `index.json`, and keep `index.d.ts` in sync.
 
-## 3. Open a pull request
+## 3. Test your build
+
+Run `npm run build` and verify `core-primitives.css` and `core-primitives.less` are correct.
+
+## 4. Open a pull request
 
 Use GitHub to [create a pull request](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request) for your branch.
 
-## 4. Bump the package version
+## 5. Bump the package version
 
 After your pull request has been approved, bump the package version by running:
 
 ```shell
-npm version [patch | minor | major]
+npm version [major | minor | patch]
 ```
 
-[`npm version`](https://docs.npmjs.com/cli/version.html) will bump the version and write the new data back to `package.json` and `package-lock.json`. It will also create and push a version commit and tag.
+Running [`npm version`](https://docs.npmjs.com/cli/version.html) will build, bump the version, and write the new data to `package.json` and `package-lock.json`. It will also create and push a version commit and tag.
 
 > **Note:** In the context of `@core-ds/primitives`, significant changes to the library or workflow, or removing primitives would be considered a major update, adding or updating primitives would be considered a minor update, and fixing primitives would be considered a patch. Non-code changes (e.g. documentation) do not require a version bump.
-
-## 5. Build Package
-
-```shell
-npm run build
-```
 
 ## 6. Publish to NPM
 

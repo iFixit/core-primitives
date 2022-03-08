@@ -7,11 +7,13 @@ interface Primitives {
   fontWeight: FontWeight;
   lineHeight: LineHeight;
   breakpoint: Breakpoint;
+  minBreakpoint: MinBreakpoint;
   shadow: Shadow;
   borderRadius: BorderRadius;
+  transition: Transition;
 }
 
-interface ColorValue {
+type ColorValue = {
   "50": string;
   "100": string;
   "200": string;
@@ -22,10 +24,21 @@ interface ColorValue {
   "700": string;
   "800": string;
   "900": string;
-}
+};
+
+type BreakpointValue = {
+  sm: string;
+  md: string;
+  lg: string;
+  xl: string;
+};
 
 interface ColorValueBlue extends ColorValue {
-  "ifixit": string;
+  ifixit: string;
+}
+
+interface ColorValueRed extends ColorValue {
+  dozuki: string;
 }
 
 interface Color {
@@ -47,13 +60,13 @@ interface Color {
   yellow: ColorValue;
   amber: ColorValue;
   orange: ColorValue;
-  red: ColorValue;
+  red: ColorValueRed;
   gray: ColorValue;
 }
 
 type Space = string[];
 
-interface FontFamily {
+type FontFamily = {
   arialBlack: string;
   inter: string;
   lato: string;
@@ -61,11 +74,11 @@ interface FontFamily {
   monoSystem: string;
   sansSystem: string;
   serifSystem: string;
-}
+};
 
-interface FontSettings {
+type FontSettings = {
   inter: string;
-}
+};
 
 type FontSize = {
   sm: string;
@@ -80,37 +93,49 @@ type FontSize = {
   "7xl": string;
   "8xl": string;
   "9xl": string;
-}
+};
 
-interface FontWeight {
+type FontWeight = {
   normal: number;
   semiBold: number;
   bold: number;
-}
+};
 
-interface LineHeight {
+type LineHeight = {
   none: number;
   tight: number;
   normal: number;
   loose: number;
-}
+};
 
-interface Breakpoint {
+type Breakpoint = BreakpointValue;
+
+type MinBreakpoint = BreakpointValue;
+
+type Shadow = {
   sm: string;
   md: string;
   lg: string;
   xl: string;
-}
+  "2xl": string;
+};
 
-type Shadow = string[];
-
-interface BorderRadius {
+type BorderRadius = {
   sm: string;
   md: string;
   lg: string;
   xl: string;
   pill: string;
-}
+};
+
+type Transition = {
+  "100": string;
+  "150": string;
+  "200": string;
+  "250": string;
+  "300": string;
+  default: string;
+};
 
 export declare const color: Color;
 export declare const space: Space;
@@ -120,7 +145,9 @@ export declare const fontSize: FontSize;
 export declare const fontWeight: FontWeight;
 export declare const lineHeight: LineHeight;
 export declare const breakpoint: Breakpoint;
+export declare const minBreakpoint: MinBreakpoint;
 export declare const shadow: Shadow;
 export declare const borderRadius: BorderRadius;
-declare const primitives: Primitives;
+export declare const transition: Transition;
+export declare const primitives: Primitives;
 export default primitives;
