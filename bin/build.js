@@ -5,6 +5,7 @@ const path = require("path");
 const primitives = require("../index.json");
 const version = process.env.npm_package_version;
 
+// Extracted from https://github.com/joakimbeng/kebab-case/blob/master/index.js
 function kebabCase(str) {
   return str.replace(/[A-Z\u00C0-\u00D6\u00D8-\u00DE]/g, function (match) {
     return "-" + match.toLowerCase();
