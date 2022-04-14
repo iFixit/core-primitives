@@ -112,13 +112,7 @@ type Breakpoint = BreakpointValue;
 
 type MinBreakpoint = BreakpointValue;
 
-type Shadow = {
-  sm: string;
-  md: string;
-  lg: string;
-  xl: string;
-  "2xl": string;
-};
+type Shadow = string[];
 
 type BorderRadius = {
   sm: string;
