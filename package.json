@@ -13,6 +13,6 @@
   "scripts": {
     "build": "node bin/build.js",
     "preversion": "npm run build",
-    "postversion": "git push && git push --tags"
+    "postversion": "npm run build && git push && git push --tags"
   }
 }
