@@ -27,7 +27,7 @@ fs.writeFileSync(
 );
 
 function toLess(obj) {
-  return Object.entries(flatten(obj))
+  return Object.entries(flattenLess(obj))
     .map(([key, value]) => `@${key}: ${value};`)
     .join("\n");
 }
@@ -58,6 +58,34 @@ function flatten(obj) {
     {},
     ...Object.entries(obj).map(([key, value]) => {
       if (typeof value === "object") {
+        return Object.entries(flatten(value)).reduce(
+          (acc, entry) => ({
+            ...acc,
+            [`${kebabCase(key)}-${kebabCase(entry[0])}`]: entry[1],
+          }),
+          {}
+        );
+      } else {
+        return { [kebabCase(key)]: value };
+      }
+    })
+  );
+}
+
+function flattenLess(obj) {
+  return Object.assign(
+    {},
+    ...Object.entries(obj).map(([key, value]) => {
+      // escape LESS minBreakpoint entries
+      if (typeof value === "object" && key === "minBreakpoint") {
+        return Object.entries(flatten(value)).reduce(
+          (acc, entry) => ({
+            ...acc,
+            [`${kebabCase(key)}-${kebabCase(entry[0])}`]: `~"${entry[1]}"`,
+          }),
+          {}
+        );
+      } else if (typeof value === "object") {
         return Object.entries(flatten(value)).reduce(
           (acc, entry) => ({
             ...acc,
