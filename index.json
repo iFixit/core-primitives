@@ -239,15 +239,11 @@
   ],
   "fontFamily": {
     "arialBlack": "'Arial Black', 'Arial Bold', Gadget, sans-serif",
-    "inter": "Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "lato": "Lato, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "mono": "'Roboto Mono', Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
     "monoSystem": "Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
     "sansSystem": "-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "serifSystem": "Georgia, serif"
-  },
-  "fontSettings": {
-    "inter": "'calt', 'cpsp', 'cv01', 'cv03', 'cv04', 'cv05', 'cv10', 'kern', 'liga'"
   },
   "fontSize": {
     "sm": "12px",
