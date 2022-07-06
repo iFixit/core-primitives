@@ -31,6 +31,7 @@ type BreakpointValue = {
   md: string;
   lg: string;
   xl: string;
+  "2xl": string;
 };
 
 interface ColorValueBlue extends ColorValue {

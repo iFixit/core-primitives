@@ -239,15 +239,11 @@
   ],
   "fontFamily": {
     "arialBlack": "'Arial Black', 'Arial Bold', Gadget, sans-serif",
-    "inter": "Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "lato": "Lato, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "mono": "'Roboto Mono', Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
     "monoSystem": "Monaco, 'Lucida Console', 'Courier New', Courier, monospace",
     "sansSystem": "-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif",
     "serifSystem": "Georgia, serif"
-  },
-  "fontSettings": {
-    "inter": "'calt', 'cpsp', 'cv01', 'cv03', 'cv04', 'cv05', 'cv10', 'kern', 'liga'"
   },
   "fontSize": {
     "sm": "12px",
@@ -278,14 +274,16 @@
   "breakpoint": {
     "sm": "576px",
     "md": "768px",
-    "lg": "1000px",
-    "xl": "1200px"
+    "lg": "1028px",
+    "xl": "1280px",
+    "2xl": "1536px"
   },
   "minBreakpoint": {
     "sm": "@media (min-width: 576px)",
     "md": "@media (min-width: 768px)",
-    "lg": "@media (min-width: 1000px)",
-    "xl": "@media (min-width: 1200px)"
+    "lg": "@media (min-width: 1028px)",
+    "xl": "@media (min-width: 1280px)",
+    "2xl": "@media (min-width: 1536px)"
   },
   "shadow": [
     "0 0 1px rgba(17, 22, 26, 0.2)",
