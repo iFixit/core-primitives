@@ -47,7 +47,7 @@ interface Color {
   white: string;
   whiteAlpha: ColorValue;
   blackAlpha: ColorValue;
-  brand: ColorValue;
+  brand: Omit<ColorValue, "50">;
   warmGray: ColorValue;
   trueGray: ColorValue;
   coolGray: ColorValue;
@@ -58,7 +58,7 @@ interface Color {
   purple: ColorValue;
   violet: ColorValue;
   indigo: ColorValue;
-  blue: ColorValueBlue;
+  blue: ColorValueBlue & { "ifixit": string; };
   lightBlue: ColorValue;
   cyan: ColorValue;
   teal: ColorValue;
