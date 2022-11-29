@@ -45,6 +45,13 @@ interface ColorValueRed extends ColorValue {
 interface Color {
   black: string;
   white: string;
+  whiteAlpha: ColorValue;
+  blackAlpha: ColorValue;
+  brand: ColorValue;
+  warmGray: ColorValue;
+  trueGray: ColorValue;
+  coolGray: ColorValue;
+  blueGray: ColorValue;
   rose: ColorValue;
   pink: ColorValue;
   fuchsia: ColorValue;
