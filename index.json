@@ -321,13 +321,13 @@
     "128px"
   ],
   "fontFamily": {
-    "arialBlack": "'Arial Black', 'Arial Bold', Gadget, sans-serif",
-    "lato": "Lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
-    "mono": "'Roboto Mono', ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace",
-    "monoSystem": "ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace",
-    "sansSystem": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
-    "serifSystem": "Georgia, serif"
-  },
+		"arialBlack": "'Arial Black', 'Arial Bold', Gadget, sans-serif",
+		"lato": "Lato, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
+		"mono": "'Roboto Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace",
+		"monoSystem": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace",
+		"sansSystem": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
+		"serifSystem": "Georgia, serif"
+	},
   "fontSize": {
     "sm": "12px",
     "md": "14px",
