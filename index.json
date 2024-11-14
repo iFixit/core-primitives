@@ -329,18 +329,18 @@
     "serifSystem": "Georgia, serif"
   },
   "fontSize": {
-    "sm": "12px",
-    "md": "14px",
-    "lg": "16px",
-    "xl": "18px",
-    "2xl": "20px",
-    "3xl": "24px",
-    "4xl": "30px",
-    "5xl": "36px",
-    "6xl": "48px",
-    "7xl": "56px",
-    "8xl": "64px",
-    "9xl": "72px"
+    "sm": "0.86rem",
+    "md": "1rem",
+    "lg": "1.14rem",
+    "xl": "1.285rem",
+    "2xl": "1.43rem",
+    "3xl": "1.715rem",
+    "4xl": "2.14rem",
+    "5xl": "2.57rem",
+    "6xl": "3.43rem",
+    "7xl": "4rem",
+    "8xl": "4.57rem",
+    "9xl": "5.14rem"
   },
   "fontWeight": {
     "normal": 400,
